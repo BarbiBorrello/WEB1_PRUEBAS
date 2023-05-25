@@ -7,7 +7,8 @@ body {
     font-family: Calibri;
     color: white;
     padding: 0;
-    margin: 0 ;
+    margin: 0;
+    padding-top: 30px; /*agregar el tp final*/
 
 
 }
@@ -699,12 +700,14 @@ ol li {
 
 .carrusel-items {
     display: flex;
-    overflow-x: hidden; /* scroll en eje x* luego de terminar cambiar de scroll a hidden/
+    overflow-x: hidden;
+    /* scroll en eje x* luego de terminar cambiar de scroll a hidden/
     overflow-y: hidden; /* desaparece scroll vertical*/
     /*border: 3px solid blue;*/
-    padding: 50px 0px; /* se agranda la imgagen cuando se para sobre ella*/
+    padding: 50px 0px;
+    /* se agranda la imgagen cuando se para sobre ella*/
 
-    
+
 
 }
 
@@ -719,8 +722,10 @@ ol li {
 
     width: 90%;
     height: 90%;
-    object-fit: cover; /* las imagenes se ajustan al tamaño del contenedor*/
-    outline: 3px solid fuchsia; /*linea de afuera*/
+    object-fit: cover;
+    /* las imagenes se ajustan al tamaño del contenedor*/
+    outline: 3px solid fuchsia;
+    /*linea de afuera*/
     border-radius: 10px;
     box-shadow: 20px 20px 30px white;
 
@@ -734,14 +739,90 @@ ol li {
 
 .carrusel {
     margin-top: 20px;
-  
+
 }
 
 /*------------------------------------------------------------------------------------------*/
 
 /*PAGINA: CLIENTES ESPECIALES*/
 
+.carrusel2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+}
+
+.imagenes {
+    /*CONTENEDOR DE IMAGENES y TEXTO*/
+
+    border: 5px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
 
 
+.img {
+    box-shadow: 2px 1px 30px white;
+    width: 700px;
+    border: 6px solid fuchsia;
+    border-radius: 50px;
+    margin: 7px; /*aplica a los iconos*/
+    object-fit: cover; /*ocupa todo el espacio*/
+    filter: saturate(175%); /*imagen mas viva*/
 
+}
 
+.texto{ /*TITULOS*/
+
+    color: #0033FF;
+    font-size: 30px;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px black;
+
+    /*border: 1px solid violet;*/
+    position: absolute; /*por encima de la imagen*/
+    flex-direction: column;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.imagenes:hover .texto {
+
+    transition: height 1s, transform 1s, background-color 1s;
+}
+
+.puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos h3 {
+
+     font-size: 100px;
+     font-weight: 500;
+     margin-top: -50px;
+     color: black;
+}
+
+.puntos .bold { /*puntos seleccionados*/
+
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: red;
+} 
+
+#atras ,#adelante{
+
+    width: 50px;
+}  

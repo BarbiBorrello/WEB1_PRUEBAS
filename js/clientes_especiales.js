@@ -1,75 +1,68 @@
-window.onload = function () {
 
-    // window.onload: ejecutar la función de JavaScript tan pronto como una página haya cargado.
-    // El formato ${marcador} nos permite insertar un valor dinámico en la cadena.
+let imagenes =[
 
-    // Variables
-    const IMAGENES = [
-        "img/Cliente1.png",
-        "img/Cliente2.png",
-        "img/Cliente3.png",
-        "img/Cliente4.png",
-        "img/Cliente5.png",
-        "img/Cliente6.png",
-        "img/Cliente7.png",
-        "img/Cliente8.png",
-        "img/Cliente9.png",
-        "img/Cliente10.png",
-        "img/Cliente11.png"
+{
+    "url": "img/Cliente1.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
+},
 
+{
+    "url": "img/Cliente2.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
+},
 
-    ];
+{
+    "url": "img/Cliente3.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
+},
 
+{
+    "url": "img/Cliente4.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
+},
 
+{
+    "url": "img/Cliente5.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
+},
 
-    const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
-    let posicionActual = 0;
-    let $botonRetroceder = document.querySelector('#retroceder');
-    let $botonAvanzar = document.querySelector('#avanzar');
-    let $imagen = document.querySelector('#imagen');
+{
+    "url": "img/Cliente6.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
+},
 
+{
+    "url": "img/Cliente7.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
+},
 
-    // Funciones
-
-    /**
-     * Funcion que cambia la foto en la siguiente posicion
-     */
-    function pasarFoto() {
-        if (posicionActual >= IMAGENES.length - 1) {
-            posicionActual = 0;
-        } else {
-            posicionActual++;
-        }
-        renderizarImagen();
-    }
-
-    /**
-     * Funcion que cambia la foto en la anterior posicion
-     */
-    function retrocederFoto() {
-        if (posicionActual <= 0) {
-            posicionActual = IMAGENES.length - 1;
-        } else {
-            posicionActual--;
-        }
-        renderizarImagen();
-    }
-
-    /**
-     * Funcion que actualiza la imagen de imagen dependiendo de posicionActual
-     */
-    function renderizarImagen() {
-        $imagen.style.backgroundImage = `url(${IMAGENES[posicionActual]})`;
-    }
+{
+    "url": "img/Cliente8.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
+},
 
 
-    // Eventos
-    $botonAvanzar.addEventListener('click', pasarFoto);
-    $botonRetroceder.addEventListener('click', retrocederFoto);
+{
+    "url": "img/Cliente9.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
+},
 
-    // Iniciar
-    renderizarImagen();
+{
+    "url": "img/Cliente10.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
+},
+
+{
+    "url": "img/Cliente11.png",
+    "nombre" : "CLIENTE QUISQUILLOSO"
 }
 
+]
 
+let atras = document.getElementById ('atras');
+let adelante = document.getElementById ('adelante');
+let imagen = document.getElementById ('img');
+let puntos = document.getElementById ('puntos');
+let texto = document.getElementById ('texto');
+let actual = 0;
 
