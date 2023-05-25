@@ -59,10 +59,31 @@ let imagenes =[
 
 ]
 
+
+/* VARIABLES*/
 let atras = document.getElementById ('atras');
 let adelante = document.getElementById ('adelante');
 let imagen = document.getElementById ('img');
 let puntos = document.getElementById ('puntos');
 let texto = document.getElementById ('texto');
 let actual = 0;
+
+atras.addEventListener ('click' , function (){
+
+    actual -=1
+
+    if(actual == -1){
+        actual= imagenes.length -1
+    }
+
+    imagen.innerHTML =
+    texto.innerHTML = 
+    <h3>${imagenes[actual].nombre} </h3>
+
+
+})
+
+
+
+
 
