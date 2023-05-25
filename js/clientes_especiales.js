@@ -73,13 +73,13 @@ atras.addEventListener ('click' , function (){
     actual -=1
 
     if(actual == -1){
-        actual= imagenes.length -1
+        actual= imagenes.length -1;
     }
 
-    imagen.innerHTML =
-    texto.innerHTML = 
+    imagen.innerHTML = `<img class="img" src="${imagen[actual].url}" alt="Cliente1">`;
+    texto.innerHTML =  `
     <h3>${imagenes[actual].nombre} </h3>
-
+    `
 
 })
 
