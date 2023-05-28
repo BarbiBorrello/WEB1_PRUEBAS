@@ -819,7 +819,7 @@ ol li {
 .contact-img img {
     display: block;
     height:400px ;
-    width: 95%;
+    width:90%;
     object-position: center;
     object-fit: cover;
     border-radius: 10px;
