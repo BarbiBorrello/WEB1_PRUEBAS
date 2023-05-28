@@ -7,7 +7,6 @@ body {
     font-family: Calibri;
     color: white;
     padding: 0;
-    margin: 0;
     padding-top: 30px; /*agregar el tp final*/
 
 
@@ -400,104 +399,7 @@ li.dropdown {
 
 /*---------------------------------------------------------------------------------------------------------*/
 
-/* Pagina de CONTACTO*/
-
-/* ENCABEZADO*/
-.contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
-
-
-}
-
-.contenedor-contacto {
-    position: relative;
-
-}
-
-.img-contacto {
-    border-radius: 100%;
-    box-shadow: 20px 20px 30px white;
-    /*sombra de la imagen*/
-}
-
-.tit-registrate {  /*modificar*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -300px;
-    font-family: Calibri;
-    font-size: 60px;
-    color: blue;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
-}
-
-/**/
-/* Pagina de CONTACTO*/
-/* FORMULARIO*/
-
-input[type=text],
-select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    /* display: inline-block;*/
-    border: 4px solid blue;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    width: 20%;
-    /* boton ENVIAR mas pequeño*/
-    background-color: blue;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 200px;
-    /* boton ENVIAR centrado*/
-    font-family: Calibri;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-input[type=submit]:hover {
-
-    background-color: white;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 4px solid blue;
-    border-radius: 4px;
-    /*    background-color: #f8f8f8;*/
-    font-size: 16px;
-    /*   resize: none;*/
-}
-
-
-.contenedor-formulario {
-
-    width: 500px;
-    margin-left: 430px;
-    /*CENTRADO*/
-    margin-top: 50px;
-    /*CENTRADO*/
-
-}
-
-.formulario {
-    border: 4px solid #00CCFF;
-    border-radius: 10px;
-    padding: 10px;
-}
+/* Pagina REGISTRATE*/
 
 
 
@@ -887,4 +789,82 @@ ol li {
     font-weight:600 ;
     box-shadow: 20px 20px 30px white;
 
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------Pagina: CONTACTANOS-------------------------------------------------------*/
+
+#contacto {
+    position: relative;
+    padding: 5rem 0;
+    /*background: rgb(226, 226, 226)/*/;
+   
+}
+
+.contact-container {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    border: 5px solid fuchsia ;
+    box-shadow: 20px 20px 30px white;
+    
+}
+
+.contact-img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.contact-img img {
+    display: block;
+    height:400px ;
+    width: 95%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.form-container {
+    padding: 1rem;
+    width: 50%;
+    margin-top: 1%;
+   
+}
+
+.form-container input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+   
+}
+
+.form-container textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    color: #444;
+    outline: none;
+    padding: 1rem 0;
+    resize: none;
+}
+
+.form-container h2 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 1rem;
+    margin-top: -1.2rem;
+}
+
+.form-container a {
+    font-size: 1.3rem;
 }
