@@ -434,7 +434,7 @@ li.dropdown {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
 }
 
-/**/
+/*-----------------------------------------------------------------------------------------*/
 /* Pagina de CONTACTO*/
 /* FORMULARIO*/
 
@@ -494,7 +494,7 @@ textarea {
 }
 
 .formulario {
-    border: 4px solid #00CCFF;
+    /*border: 4px solid #00CCFF;*/
     border-radius: 10px;
     padding: 10px;
 }
@@ -734,7 +734,7 @@ ol li {
 
 .carrusel-item:hover {
     /*se agranda imagen cuando para*/
-    transform: scale(1.7);
+    transform: scale(1.3);
 
 }
 
@@ -888,3 +888,74 @@ ol li {
     box-shadow: 20px 20px 30px white;
 
 }
+
+/*--------------FORMULARIO-------------------------------------------------*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    margin: 5px;
+    border: 7px solid fuchsia;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/Contacto.jpg);
+    background-repeat: no-repeat;
+    background-position : center;
+    background-size: 100% ;
+    box-shadow: 20px 20px 30px white;
+    }
+
+
+   textarea {
+    border: 4px solid black;
+    border-radius: 15px 15px 15px 15px;
+    width: 60%;
+    opacity: 0.9 ;
+   }
+   #errores {
+    border: 1px solid red;
+    padding: 5px;
+    display: none;
+   }
+   #errores p {
+    color: red;
+   }
+   
+   .error {
+    border: 1px solid red;
+   }
+
+   label{
+    background-color: aqua;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 5px ;
+    border: 4px solid black;
+   }
+
+   /* boton enviar mas grande*/
+   
+    #nombre , #email{
+    border: 4px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 20px;
+    opacity: 0.9 ;
+ 
+    }
+
+
+   .enviar{
+
+    font-size: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+    font-weight: bolder;
+
+   }
