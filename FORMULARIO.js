@@ -1,5 +1,5 @@
 /*let primero = document.querySelector("form input");
-primero.focus(); // HACE FOCO EN EL PRIMER ELEMENTO*/
+primero.focus(); // HACE FOCO EN EL PRIMER ELEMENTO (input: nombre)*/
 let reg_correo = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
 
 function validar() {
