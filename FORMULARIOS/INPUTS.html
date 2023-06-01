@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,15 @@
     <title>Inputs</title>
 
     <style>
+        #mensaje {
 
-#mensaje {
 
-
-    width: 500px;
-    height: 300px;
-}
-
+            width: 500px;
+            height: 300px;
+        }
     </style>
 </head>
+
 <body>
 
     <form action="">
@@ -29,7 +29,8 @@
         <input type="text" id="lname" name="lname" value=""><br><br>
 
         <label for="mensaje"> Mensaje</label> <br>
-        <input type="text" id="mensaje" name="mensaje" rospan ="3" value="Muestra un campo de entrada de texto de una sola línea"> <br>
+        <input type="text" id="mensaje" name="mensaje" rospan="3"
+            value="Muestra un campo de entrada de texto de una sola línea"> <br>
 
         <hr>
 
@@ -48,7 +49,8 @@
 
         <!--CHECK BOX-->
 
-        <p>Las casillas de verificación permiten a un usuario seleccionar CERO o MÁS opciones de un número limitado de opciones.</p>
+        <p>Las casillas de verificación permiten a un usuario seleccionar CERO o MÁS opciones de un número limitado de
+            opciones.</p>
 
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
         <label for="vehicle1"> I have a bike</label><br>
@@ -59,10 +61,24 @@
         <input type="submit" value="Enviar"> <br>
 
         <hr>
-        
+
+        <h3>El atributo de autocompletar</h3>
+
+        <form action="/action_page.php" autocomplete="on">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            <input type="submit">
+        </form>
+
+    </form>
+
+    <hr>
+
     
-    </form> 
-      
-    
+
+
 </body>
+
 </html>
