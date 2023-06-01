@@ -61,16 +61,49 @@
         <input type="submit" value="Enviar"> <br>
 
         <hr>
+            <!--CONTRASEÑA-->
 
-        <h3>El atributo de autocompletar</h3>
+        <h3>Tipo de entrada Contraseña</h3>
 
-        <form action="/action_page.php" autocomplete="on">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email"><br><br>
-            <input type="submit">
-        </form>
+        <form action="/action_page.php">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+
+        <hr>
+
+        <!--RESET-->
+
+        <h3>Restablecimiento del tipo de entrada</h3>
+
+        <p> type="reset" define un botón de reinicio que restablecerá todos los valores del formulario a sus valores predeterminados:</p>
+
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+          </form> 
+
+          <hr>
+
+           <!--BUTON-->
+
+           <h3>Botón de tipo de entrada</h3>
+
+           <p> type="button" define un botón :</p>
+
+           
+        <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+           <hr>
+        
+
 
     </form>
 
