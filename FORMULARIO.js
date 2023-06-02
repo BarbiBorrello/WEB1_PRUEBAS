@@ -71,8 +71,12 @@ function validar() {
   primero.focus();
  }
  return false;
- 
+
+ }
+
+ function pregunta(){
+    if (confirm('¿Estas seguro de enviar este formulario?')){
+       document.submit();
+    }
 }
-
-
 

@@ -915,7 +915,7 @@ form {
     background-image: url(img/Contacto.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     box-shadow: 20px 20px 30px white;
 }
 
@@ -960,7 +960,7 @@ label {
 
 }
 
-/* boton enviar mas grande*/
+
 
 #nombre,
 #email {
@@ -974,7 +974,7 @@ label {
 }
 
 
-.enviar {
+.enviar, #confirmar {
 
     font-size: 20px;
     border: 4px solid black;
@@ -983,3 +983,4 @@ label {
     font-weight: bolder;
 
 }
+
