@@ -8,7 +8,8 @@ body {
     color: white;
     padding: 0;
     margin: 0;
-    padding-top: 30px; /*agregar el tp final*/
+    padding-top: 30px;
+    /*agregar el tp final*/
 
 
 }
@@ -423,7 +424,8 @@ li.dropdown {
     /*sombra de la imagen*/
 }
 
-.tit-registrate {  /*modificar*/
+.tit-registrate {
+    /*modificar*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -745,7 +747,7 @@ ol li {
 
 /*------------------------------------------------------------------------------------------*/
 
-/*PAGINA: CLIENTES ESPECIALES*/ 
+/*PAGINA: CLIENTES ESPECIALES*/
 
 .carrusel2 {
 
@@ -773,13 +775,17 @@ ol li {
     width: 700px;
     border: 6px solid fuchsia;
     border-radius: 50px;
-    margin: 7px; /*aplica a los iconos*/
-    object-fit: cover; /*ocupa todo el espacio*/
-    filter: saturate(175%); /*imagen mas viva*/
+    margin: 7px;
+    /*aplica a los iconos*/
+    object-fit: cover;
+    /*ocupa todo el espacio*/
+    filter: saturate(175%);
+    /*imagen mas viva*/
 
 }
 
-.texto{ /*TITULOS*/
+.texto {
+    /*TITULOS*/
 
     color: #0033FF;
     font-size: 30px;
@@ -787,13 +793,14 @@ ol li {
     text-shadow: 2px 2px 2px black;
 
     /*border: 1px solid violet;*/
-    position: absolute; /*por encima de la imagen*/
+    position: absolute;
+    /*por encima de la imagen*/
     flex-direction: column;
     margin-bottom: -20px;
     display: flex;
     align-items: center;
     justify-content: center;
- 
+
 }
 
 .imagenes:hover .texto {
@@ -801,7 +808,7 @@ ol li {
     transition: height 1s, transform 1s, background-color 1s;
 }
 
-.puntos{
+.puntos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -809,28 +816,30 @@ ol li {
 
 .puntos h3 {
 
-     font-size: 100px;
-     font-weight: 500;
-     margin-top: -50px;
-     color: black;
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -50px;
+    color: black;
 }
 
-.puntos .bold { /*puntos seleccionados*/
+.puntos .bold {
+    /*puntos seleccionados*/
 
     font-weight: 700;
     margin-left: 10px;
     margin-right: 10px;
     color: red;
-} 
+}
 
-#atras ,#adelante{
+#atras,
+#adelante {
 
     width: 50px;
-}  
+}
 
 /*------------------------------------------------------------------------------------------*/
 
-/*PAGINA: CLIENTES ESPECIALES2*/ 
+/*PAGINA: CLIENTES ESPECIALES2*/
 
 .carousel3 {
     max-width: 800px;
@@ -850,48 +859,50 @@ ol li {
     box-shadow: 20px 20px 30px white;
 }
 
-#avanzar  img{
+#avanzar img {
 
     width: 50px;
 
 }
 
-#retroceder  img{
+#retroceder img {
 
     width: 50px;
 }
 
-#avanzar , #retroceder{
-   
+#avanzar,
+#retroceder {
+
     background-image: radial-gradient(circle, blue, black, white);
-    border:hidden;
+    border: hidden;
     border-radius: 24px;
-}    
+}
 
-.controles{
+.controles {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
 }
 
-#play , #stop{
+#play,
+#stop {
 
-    padding:10px ;
-    margin-left:10px ;
+    padding: 10px;
+    margin-left: 10px;
     border-radius: 20px;
     font-family: Calibri;
     font-size: 20px;
     color: black;
     border: 5px solid fuchsia;
-    font-weight:600 ;
+    font-weight: 600;
     box-shadow: 20px 20px 30px white;
 
 }
 
 /*--------------FORMULARIO-------------------------------------------------*/
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -903,54 +914,67 @@ form{
     align-items: center;
     background-image: url(img/Contacto.jpg);
     background-repeat: no-repeat;
-    background-position : center;
-    background-size: 100% ;
+    background-position: center;
+    background-size: 100%;
     box-shadow: 20px 20px 30px white;
-    }
+}
 
 
-   textarea {
+textarea {
     border: 4px solid black;
     border-radius: 15px 15px 15px 15px;
     width: 60%;
-    opacity: 0.9 ;
-   }
-   #errores {
-    border: 1px solid red;
-    padding: 5px;
-    display: none;
-   }
-   #errores p {
-    color: red;
-   }
-   
-   .error {
-    border: 1px solid red;
-   }
+    opacity: 0.9;
 
-   label{
+}
+
+#errores {
+    border: 4px solid red;
+    border-radius: 10px;
+    padding: 2px;
+    display: none;
+    background-color: aqua;
+
+}
+
+#errores p {
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.error {
+    border: 4px solid red;
+
+}
+
+label {
     background-color: aqua;
     color: black;
     font-size: 20px;
     border-radius: 10px;
     font-weight: bolder;
-    padding: 5px ;
+    padding: 5px;
     border: 4px solid black;
-   }
 
-   /* boton enviar mas grande*/
-   
-    #nombre , #email{
+}
+
+/* boton enviar mas grande*/
+
+#nombre,
+#email {
     border: 4px solid black;
     border-radius: 10px;
     width: 300px;
     height: 20px;
-    opacity: 0.9 ;
- 
-    }
+    opacity: 0.9;
 
 
-   .enviar{
+}
+
+
+.enviar {
 
     font-size: 20px;
     border: 4px solid black;
@@ -958,4 +982,4 @@ form{
     background-color: aqua;
     font-weight: bolder;
 
-   }
+}
